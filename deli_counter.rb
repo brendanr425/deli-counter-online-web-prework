@@ -11,7 +11,7 @@ def line(katz_deli)
   else
     str = ""
     katz_deli.each_with_index do |person, idx|
-      str += "#{idx}. #{person} "
+      str += "#{idx + 1}. #{person} "
     end
     puts "The line is currently: #{str}"
 
