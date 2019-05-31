@@ -13,6 +13,7 @@ def line(katz_deli)
     katz_deli.each_with_index do |person, idx|
       str += "#{idx}. #{person} "
     end
+    puts "The line is currently: #{str}"
 
   end
 end
