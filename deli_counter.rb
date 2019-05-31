@@ -5,15 +5,14 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
-  str = ""
-  katz_deli.each_with_index do |person, idx|
-    str += "#{idx + 1}. #{person} "
-  end
-
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    puts "The line is currently: #{str}"
+    puts"The line is currently:"
+    katz_deli.each_with_index do |person, idx|
+      puts person
+      puts idx
+    end
   end
 end
 
